@@ -1,4 +1,3 @@
-pipeline {
     agent any
 
     stages {
@@ -13,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'cat app.txt'
+                sh 'cat wrongfile.txt'
             }
         }
 
