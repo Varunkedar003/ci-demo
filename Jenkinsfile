@@ -1,3 +1,4 @@
+pipeline {
     agent any
 
     stages {
@@ -22,5 +23,4 @@
                 sh 'echo "Artifact created" > build.txt'
             }
         }
-    }
-}
+    }  
