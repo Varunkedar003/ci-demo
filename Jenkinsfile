@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'cat wrongfile.txt'
+                sh 'cat app.txt'
             }
         }
 
