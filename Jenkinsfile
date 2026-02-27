@@ -1,5 +1,5 @@
 pipeline {
-        agent any
+    agent any
 
     stages {
 
@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'cat app.txt'
+                sh 'cat wrongfile.txt'
             }
         }
 
@@ -23,4 +23,5 @@ pipeline {
                 sh 'echo "Artifact created" > build.txt'
             }
         }
-    }  
+    }
+}  
