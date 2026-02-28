@@ -17,10 +17,10 @@ pipeline {
             }
         }
 
-        stage('Package') {
+        stage('Docker Build') {
             steps {
-                echo 'Packaging application...'
-                sh 'echo "Artifact created" > build.txt'
+                echo 'Building Docker image...'
+                sh 'docker build -t ci-demo:latest .'
             }
         }
     }
