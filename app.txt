@@ -4,3 +4,4 @@ hapiness
 webhook test 2
 docker trigger
 docker stage test
+docker permission final test
